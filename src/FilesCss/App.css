@@ -1,0 +1,122 @@
+.App {
+  margin: 0;
+  background: #1a1f2e;
+  /* Sidebar background */
+  min-height: 100vh;
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #1a1f2e;
+  height: 100%;
+}
+.header-container {
+  margin-top: 20px;
+  position:relative;
+  display:flex;
+  justify-content:center; 
+  align-items:center;
+  height: 200px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-direction:column;
+  border-radius: 24px;
+    /* Add rounded corners */
+    border: 1px solid rgba(253, 251, 249, 0.3);
+      /* Orange border */
+      box-shadow: 0 0 40px rgba(218, 212, 209, 0.15);
+    /* Subtle glow */
+    background: #242936;
+}
+
+.header-container > h1  {
+  font-size: 3rem;
+  margin: 0;
+  z-index:2;
+  color: #fff;
+    /* Added: shadow and spacing for elegance */
+    
+    padding: 10px;
+
+}
+
+
+.header-container h2{
+  font-size: 1.5rem;
+    margin: 0;
+    z-index: 2;
+    color: #fff;
+    /* Added: shadow and spacing for elegance */
+  
+    padding: 10px;
+}
+.navBar {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #162a2e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    width: fit-content;
+    margin:0 auto;
+}
+.navBar a {
+  color: white;
+  padding: 14px 24px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.navLinks.active{
+  border-radius: 24px;
+    /* Add rounded corners */
+    border: 1px solid rgba(88, 166, 255, 0.3);
+    /* Light blue border */
+    box-shadow: 0 0 40px rgba(88, 166, 255, 0.15);
+    /* Subtle glow */
+    background: rgba(88, 166, 255, 0.15); 
+}
+
+
+
+
+
+.footer-container {
+  display:flex;
+  justify-content:center; 
+  align-items:center;
+  height: 100px;
+  background-color: #0f1419;
+  color: #fff;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+  border-radius: 24px;
+  border: 1px solid rgba(253, 251, 249, 0.3);
+    /* Orange border */
+    box-shadow: 0 0 40px rgba(218, 212, 209, 0.15);
+    background: #242936;
+}
+
+
+.navBar a,
+.navBar .navLinks {
+  color: white;
+  padding: 14px 24px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  background: transparent;
+}
+
+.navBar a:hover,
+.navBar .navLinks:hover {
+  /* Fixed - was incomplete */
+  border-radius: 24px;
+  border: 1px solid rgba(88, 166, 255, 0.3);
+  box-shadow: 0 0 40px rgba(88, 166, 255, 0.15);
+  background: rgba(88, 166, 255, 0.1);
+  /* Optional: subtle blue tint on hover */
+}
