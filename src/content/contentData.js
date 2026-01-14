@@ -302,6 +302,7 @@ export const contentData = [
         id: 4,
         page: "services",
         title: "Software Development & Algorithms",
+        full_title:"My strength is knowing how to program efficiently and correctly",
 
         description: (
             <>

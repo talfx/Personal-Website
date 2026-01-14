@@ -1,7 +1,6 @@
 import { BasicCard } from '../components/basic-Card';
 import { contentData } from '../content/contentData';
-import '../FilesCss/card.css'
-
+import '../FilesCss/page-wrapper.css';
 export function Contact() {
     const contactItems = contentData.filter(item => item.page === "contact");
 

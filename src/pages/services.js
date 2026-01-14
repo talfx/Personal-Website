@@ -1,5 +1,5 @@
 import { Card } from "../components/card";
-import '../FilesCss/card.css';
+import '../FilesCss/page-wrapper.css';
 import {contentData} from "../content/contentData";
 
 export function Services() {
