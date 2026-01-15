@@ -38,18 +38,7 @@ export function Card({ full_title, title, description, imageUrls = [], bulletpoi
                                     alt={title}
                                     onClick={() => setIsImageEnlarged(true)}
                                 />
-                                {title === 'Data Analyst' && (
-                                    <>
-                                        <p style={{
-                                            fontSize: '10px',
-                                            color: '#adbac7',
-                                            textAlign: 'right',
-                                            margin: '4px 0 0 0',
-                                            fontStyle: 'italic'
-                                        }}> *Images chosen consists of public information data*</p>
-                                    </>
-
-                                )}
+                               
                                 {imageUrls.length > 1 && (
                                     <>
                                         <div className='slideshow-controls'>
@@ -67,10 +56,14 @@ export function Card({ full_title, title, description, imageUrls = [], bulletpoi
                                                 ))}
                                             </div>
                                             <button className='slideshow-btn next' onClick={nextImage}>›</button>
+                                            
                                         </div>
 
                                     </>
                                 )}
+                                
+                              
+                                
                             </div>
                             <ul className='card-bulletpoints'>
                                 {bulletpoints.map((point, index) => (
@@ -79,7 +72,18 @@ export function Card({ full_title, title, description, imageUrls = [], bulletpoi
                             </ul>
                          
                         </div>
-                        
+                        {title === 'Data Analyst' && (
+                            <>
+                                <p style={{
+                                    fontSize: '10px',
+                                    color: '#adbac7',
+                                    textAlign: 'right',
+                                    margin: '4px 0 0 0',
+                                    fontStyle: 'italic'
+                                }}> *Images chosen consists of public information data*</p>
+                            </>
+
+                        )}
                         <button className='card-button' onClick={() => setIsFlipped(true)}>
                             View Details
                         </button>

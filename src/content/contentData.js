@@ -185,7 +185,7 @@ export const contentData = [
     bulletpoints: [
         "PyAI voice transcription with context-aware responses",
         "Python(Flask) backend for automated review summarization",
-        "Game Preservation and Rapid prototyping: Blackjack game in 1 day (C#)"
+        "Game Preservation and Rapid prototyping"
     ]
 },
 
