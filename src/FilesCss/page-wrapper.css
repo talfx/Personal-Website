@@ -5,7 +5,7 @@
     min-height: 100vh;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(800px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(600px, 100%), 1fr));
     row-gap: 80px;
     column-gap: 20px;
     justify-content: center;
