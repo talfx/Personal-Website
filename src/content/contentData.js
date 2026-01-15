@@ -209,7 +209,7 @@ export const contentData = [
                 </ul>
 
                 <h3>My Approach</h3>
-                <p>I don't just follow industry standards; I build systems that <strong>push them forward</strong>. Every project is an opportunity to create something maintainable, scalable, and future-proof. Whether you need a monitoring dashboard, API integration, or complete web platform, I architect solutions that align with business goals.</p>
+                <p>I want to build systems that <strong>push the industry forward</strong>. Every project is an opportunity to create something maintainable, scalable, and future-proof. Whether you need a monitoring dashboard, API integration, or complete web platform, I architect solutions that align with business goals.</p>
 
                 <h3>Ideal For</h3>
                 <p>Startups needing rapid MVPs, companies scaling existing systems, or businesses requiring custom web applications with robust backend infrastructure.</p>

@@ -280,6 +280,17 @@
 
 /* Mobile Adjustments */
 @media (max-width: 900px) {
+    .card-container-secondary {
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 50px;
+            /* ADD THIS - creates space for slideshow controls */
+        }
+    
+        .slideshow-controls {
+            bottom: -35px;
+            /* Adjust position */
+        }
     
         .card-bulletpoints li:before {
             font-size: 14px;
@@ -309,15 +320,11 @@
             padding: 8px 16px;
             margin-top: 18px;
         }
-    .card-front,
-        .card-back {
-            min-height: 250px;
-            height: auto;
-        }
+    
     .card-container {
         padding: 20px;
         height: auto;
-        min-height: 250px;
+        min-height: 320px;
     }
 
     .card-title {
@@ -345,6 +352,17 @@
 }
 
 @media (max-width: 600px) {
+    .card-container-secondary {
+            flex-direction: column;
+            gap: 40px !important;
+            
+            /* ADD THIS - creates space for slideshow controls */
+        }
+    
+        .slideshow-controls {
+            bottom: -35px;
+            /* Adjust position */
+        }
     .card-bulletpoints li {
         
             font-size: 14px;
@@ -379,14 +397,11 @@
             margin-top: 12px;
             width: 70%;
         }
-    .card-front,
-        .card-back {
-            min-height: 250px;
-            height: auto;
-        }
     .card-container {
         padding: 15px;
-        min-height: 250px;
+        max-width: 100%;
+            
+        min-height: 320px;
         max-height: none;
     }
 

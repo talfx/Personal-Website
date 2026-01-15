@@ -89,15 +89,17 @@
 @media (max-width: 900px) {
     .card-flip-container {
         max-width: 90%;
-        min-height: 320px;
-        max-height: 320px;
-        margin-bottom: 20px;
-            margin-top: 20px;
+        min-height: 380px;
+            /* FIXED height for consistency */
+            height: auto;
+            /* Add this */
+            margin-bottom: 30px;
     }
 
     .card-front,
     .card-back {
         min-height: 380px;
+        height: auto;
     }
 
     .card-description-full {
@@ -111,20 +113,24 @@
 
 @media (max-width: 600px) {
     .card-flip-container {
-        max-width: 95%;
-        min-height: 320px;
-        max-height: 320px;
-        margin-bottom: 20px;
-        margin-top: 20px;
+        max-width: 100%;
+        width: calc(100vw - 30px);
+        min-height: 380px;
+            /* FIXED height for consistency */
+            height: auto;
+            /* Add this */
+            margin-bottom: 30px;
     }
 
     .card-front,
     .card-back {
         min-height: 320px;
+        height: auto;
+            /* ADD THIS */
     }
 
     .card-description-full {
-        height: 180px;
+        height: 200px;
         padding: 12px;
         font-size: 13px;
     }

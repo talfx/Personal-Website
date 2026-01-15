@@ -96,6 +96,10 @@
         padding: 12px;
         width: 98%;
         row-gap: 25px;
+        padding-bottom: 30px;
+            /* ADD THIS - space at bottom */
+            row-gap: 30px;
+            /* Consistent gap between cards */
     }
 
     .intro-card-wrapper .card-flip-container {
@@ -125,14 +129,20 @@
                 font-size: 13px;
         }
     
-    .page-wrapper {
-       
-        overflow-y: auto;
-        padding: 10px;
-        row-gap: 50px;
-        border-radius: 12px;
-        column-gap: 10px;
-    }
+                .page-wrapper {
+                    padding: 10px;
+                    /* Reduced from 12px */
+                    padding-bottom: 30px;
+                    row-gap: 30px;
+                    border-radius: 12px;
+                    width: 100%;
+                    /* Changed from 95% */
+                    max-width: 94vw !important;
+                    /* Never exceed viewport */
+                    margin: 0;
+                    /* Remove auto margins */
+                    border-radius: 0;
+                    /* Remove rounded corners on tiny screens */   }
 
     .intro-card-wrapper .card-flip-container {
         max-width: 95%;
