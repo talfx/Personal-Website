@@ -38,6 +38,18 @@ export function Card({ full_title, title, description, imageUrls = [], bulletpoi
                                     alt={title}
                                     onClick={() => setIsImageEnlarged(true)}
                                 />
+                                {title === 'Data Analyst' && (
+                                    <>
+                                        <p style={{
+                                            fontSize: '10px',
+                                            color: '#adbac7',
+                                            textAlign: 'right',
+                                            margin: '4px 0 0 0',
+                                            fontStyle: 'italic'
+                                        }}> *Images chosen consists of public information data*</p>
+                                    </>
+
+                                )}
                                 {imageUrls.length > 1 && (
                                     <>
                                         <div className='slideshow-controls'>
@@ -65,22 +77,13 @@ export function Card({ full_title, title, description, imageUrls = [], bulletpoi
                                     <li key={index}>{point}</li>
                                 ))}
                             </ul>
+                         
                         </div>
+                        
                         <button className='card-button' onClick={() => setIsFlipped(true)}>
                             View Details
                         </button>
-                        {title === 'Data Analyst' && (
-                            <>
-                                <p  style={{
-                                    fontSize: '10px',
-                                    color: '#adbac7',
-                                    textAlign: 'right',
-                                    margin: '4px 0 0 0',
-                                    fontStyle: 'italic'
-                                }}> *Images chosen consists of public information data*</p>
-                            </>
-                            
-                        )}
+                      
                             
                         
                     </div>
