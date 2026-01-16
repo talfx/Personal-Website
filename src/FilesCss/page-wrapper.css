@@ -61,6 +61,7 @@
     padding: 20px;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     min-height: 35vh;
+    height: auto;
 }
 
 /* Portfolio Title */

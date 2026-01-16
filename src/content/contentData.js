@@ -12,7 +12,7 @@ const Services_SD = importAll(require.context('./images/Services-SD', false, /\.
 const AboutPA = importAll(require.context('./images/About-PA', false, /\.(png|jpe?g|svg)$/));
 const AboutLF = importAll(require.context('./images/About-LF', false, /\.(png|jpe?g|svg)$/));
 const AboutEd = importAll(require.context('./images/About-Ed', false, /\.(png|jpe?g|svg)$/));
-const AboutPI = importAll(require.context('./images/About-PI', false, /\.(png|jpe?g|svg)$/));
+//const AboutPI = importAll(require.context('./images/About-PI', false, /\.(png|jpe?g|svg)$/));
 const AboutmeTop = importAll(require.context('./images/About-Main', false, /\.(png|jpe?g|svg)$/));
 
 
@@ -336,6 +336,7 @@ export const contentData = [
     },
     {
     id: 0,
+    page: "about",
     title: "Tal Golan",
     full_title:"About Me",
         description: (
@@ -389,8 +390,7 @@ export const contentData = [
         imageUrls: AboutEd,
         bulletpoints: [
             "BSc Computer Science (2019-2022)",
-            "Big Data Engineering specialization",
-            "97 avg, Silicon Valley-designed program"
+            "Big Data Engineering specialization"
         ]
     },
 
@@ -398,45 +398,19 @@ export const contentData = [
     {
         id: 2,
         page: "about",
-        title: "Professional Interests",
-        full_title: "Professional Interests",
+        title: "Key Attributes & Professional Interests",
+        full_title: "Key Attributes & Professional Interests",
         description: (
             <>
                 <h3>Data Science & Engineering</h3>
                 <p>Passionate about extracting insights from complex datasets and building robust data infrastructure. I thrive on turning messy, real-world data into actionable intelligence through ETL pipelines, machine learning models, and compelling visualizations.</p>
 
                 <h3>Game Development</h3>
-                <p>Gaming isn't just a hobby; it's been my training ground. As a <strong>former #1-ranked esports player and team leader</strong>, I learned to analyze game mechanics at a granular level, understand player psychology, and lead teams under intense pressure.</p>
-
-                <p><strong>What esports taught me:</strong></p>
-                <ul>
-                    <li>Deep systems analysis (breaking down mechanics, balance, engagement loops)</li>
-                    <li>Team leadership and communication in high-stakes environments</li>
-                    <li>Performance optimization and strategic thinking</li>
-                    <li>What makes players return: engagement, fulfillment, and flow states</li>
-                </ul>
-                <p>I bring this player-first perspective to development, creating experiences that resonate because I understand them from the inside.</p>
+                <p>Gaming isn't just a hobby—it's been my training ground. As a <strong>former #1-ranked esports player and team leader</strong>, I learned to analyze game mechanics at a granular level, understand player psychology, and lead teams under intense pressure. I bring this player-first perspective to development, creating experiences that resonate because I understand them from the inside.</p>
 
                 <h3>Software Development & AI</h3>
                 <p>Fascinated by algorithmic problem-solving and building intelligent systems. Whether optimizing performance, designing elegant architectures, or integrating AI capabilities, I'm driven by creating software that pushes boundaries.</p>
-            </>
-        ),
-        imageUrls: AboutPI,
-        bulletpoints: [
-            "Data Science & ML pipelines",
-            "Game Dev (former #1 esports player)",
-            "Software & AI systems"
-        ]
-    },
 
-    // Card 3 - Key Attributes
-    {
-        id: 3,
-        page: "about",
-        title: "Key Attributes",
-        full_title: "Key Attributes",
-        description: (
-            <>
                 <h3>Rapid Learning & Adaptability</h3>
                 <p>My accelerated degree proved what I've always known: <strong>I master new topics with exceptional speed</strong>. Whether learning a new framework, diving into unfamiliar domains, or adapting to emerging technologies, I thrive on fast-paced learning environments.</p>
 
@@ -444,7 +418,7 @@ export const contentData = [
                 <p><strong>Fluent in English and Hebrew</strong> (daily English usage). Years of communicating with thousands of players globally—from casual conversation to high-pressure competitive scenarios—honed my ability to articulate complex ideas clearly and collaborate effectively across cultures.</p>
 
                 <h3>Team-First Mentality</h3>
-                <p>Esports taught me the ultimate lesson: <strong>the team and the goal come first</strong>. I bring this mindset to every project—prioritizing collective success, staying focused on what matters, and doing whatever it takes to achieve exceptional results.</p>
+                <p>Esports taught me the ultimate lesson: <strong>the team and the goal come first</strong>. I bring this mindset to every project, prioritizing collective success, staying focused on what matters, and doing whatever it takes to achieve exceptional results.</p>
 
                 <h3>Integrity & Kindness</h3>
                 <p>Honesty and kindness have guided me throughout my life. I believe the best work happens when people trust each other, communicate openly, and genuinely care about the outcome and each other.</p>
@@ -452,9 +426,9 @@ export const contentData = [
         ),
         imageUrls: AboutPA,
         bulletpoints: [
-            "Rapid learner & highly adaptable",
-            "English/Hebrew fluent, strong communicator",
-            "Team-first, honest, collaborative"
+            "Data Science, Game Dev & AI expertise",
+            "Former #1 esports player & team leader",
+            "Rapid learner, bilingual, team-first mindset"
         ]
     },
 
